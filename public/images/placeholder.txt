@@ -1,0 +1,11 @@
+This is a placeholder file for the public/images directory.
+Please add actual images like logo.png, hero-bg.png, hero-character.png, banner.png, gate.png here.
+For example:
+- logo.png (University Logo)
+- hero-bg.png (Background for the hero section)
+- hero-character.png (Character image for hero section)
+- banner.png (General banner image)
+- gate.png (Image of university gates)
+All images should be replaced with actual assets for the Streamer University website.
+Remember to add data-ai-hint attributes to Image components if using placeholders for AI-assisted image selection later.
+e.g. data-ai-hint="university logo"
