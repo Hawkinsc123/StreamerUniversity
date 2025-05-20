@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -28,6 +29,9 @@ export function Header() {
           </Button>
           <Button variant="link" asChild className="text-foreground hover:text-primary font-bold text-sm sm:text-base whitespace-nowrap">
             <Link href="/professor-bio">PROFESSOR BIO</Link>
+          </Button>
+          <Button variant="link" asChild className="text-foreground hover:text-primary font-bold text-sm sm:text-base whitespace-nowrap">
+            <Link href="/code-viewer">VIEW CODE</Link>
           </Button>
         </nav>
       </div>
