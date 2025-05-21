@@ -16,7 +16,7 @@ export function Footer() {
         <div className="relative size-32">
           <SpinningLogoText />
           <Image 
-            src="https://placehold.co/100x86.png" 
+            src="/images/StreamerU.avif" 
             alt="Streamer University Logo" 
             width={64} 
             height={55} 

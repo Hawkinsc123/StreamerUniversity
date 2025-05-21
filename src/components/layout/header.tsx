@@ -9,7 +9,7 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image 
-            src="https://placehold.co/100x86.png" 
+            src="/images/StreamerU.avif" 
             alt="Streamer University Logo" 
             width={60} 
             height={52} 

@@ -31,8 +31,8 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section 
-        className="flex min-h-[80vh] lg:min-h-screen flex-col items-center bg-bottom bg-repeat-x pt-24 sm:pt-32 px-4 sm:px-8 md:px-16"
-        style={{ backgroundImage: "url('https://placehold.co/1920x1080.png?text=Hero+BG')" }}
+ className="flex min-h-[80vh] lg:min-h-screen flex-col items-center bg-bottom bg-repeat-x pt-24 sm:pt-32 px-4 sm:px-8 md:px-16"
+ style={{}}
         data-ai-hint="abstract background"
       >
         <div className="my-auto flex w-full max-w-screen-lg flex-col items-center justify-between gap-12 lg:flex-row lg:gap-16 text-center lg:text-left">
@@ -48,11 +48,12 @@ export default function HomePage() {
             </div>
           </div>
           <Image 
-            src="https://placehold.co/600x600.png" 
-            alt="Hero Character" 
+            src="/images/streamer2.avif" 
+            alt="streamer2" 
             width={400} 
             height={400}
             className="size-64 sm:size-80 md:size-96 shrink-0 rounded-lg shadow-2xl" 
+            data-ai-hint="placeholder background"
             data-ai-hint="gaming character"
             priority
           />
@@ -80,8 +81,8 @@ export default function HomePage() {
           </div>
           <div className="mt-8 sm:mt-12">
             <Image 
-              src="https://placehold.co/1200x480.png" 
-              alt="Streamer University 2025 Banner" 
+              src="/images/banner.avif" 
+              alt="banner" 
               width={1200} 
               height={480} 
               className="mx-auto rounded-lg shadow-lg"
@@ -109,8 +110,8 @@ export default function HomePage() {
             </div>
             <div className="flex-1 lg:basis-1/2 mt-8 lg:mt-0">
               <Image 
-                src="https://placehold.co/600x400.png" 
-                alt="Streamer University Gates" 
+                src="/images/gate.avif" 
+                alt="gate" 
                 width={600} 
                 height={400} 
                 className="w-full max-w-md lg:max-w-full mx-auto rounded-lg shadow-xl"
@@ -199,8 +200,8 @@ export default function HomePage() {
       <section className="bg-primary">
         <div className="container mx-auto">
           <Image 
-            src="https://placehold.co/1600x400.png" 
-            alt="Streamer University Final Banner" 
+            src="/images/banner.avif" 
+            alt="banner" 
             width={1600} 
             height={400} 
             className="w-full object-cover max-h-72 sm:max-h-96"
