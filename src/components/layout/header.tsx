@@ -31,7 +31,7 @@ export function Header() {
             <Link href="/professor-bio">PROFESSOR BIO</Link>
           </Button>
           <Button variant="link" asChild className="text-foreground hover:text-primary font-bold text-sm sm:text-base whitespace-nowrap">
-            <Link href="/code-viewer">VIEW CODE</Link>
+            <Link href="https://github.com/Hawkinsc123/StreamerUniversity" target="_blank" rel="noopener noreferrer">VIEW CODE</Link>
           </Button>
         </nav>
       </div>
