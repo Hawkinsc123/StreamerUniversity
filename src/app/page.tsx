@@ -19,11 +19,11 @@ const benefits = [
 ];
 
 const notableCourses = [
-  { name: "Sex Education", professor: "Professor TBD" },
-  { name: "Business Management", professor: "Professor TBD" },
-  { name: "Music Production", professor: "Professor TBD" },
-  { name: "Film and Acting", professor: "Professor TBD" },
-  { name: "MANY MORE", professor: "Professor TBD" },
+  { name: "Sex Education", professor: "Professor Cindy Gallop" },
+  { name: "Art of Collaboration", professor: "Marcus King" },
+  { name: "Love & Relationships", professor: "India Love" },
+  { name: "Culinary Arts", professor: "Cookinwitkya" },
+  { name: "Physical Education", professor: "Duke Dennis" },
 ];
 
 export default function HomePage() {
@@ -31,20 +31,18 @@ export default function HomePage() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section 
- className="flex min-h-[80vh] lg:min-h-screen flex-col items-center bg-bottom bg-repeat-x pt-24 sm:pt-32 px-4 sm:px-8 md:px-16"
- style={{}}
+ className="flex min-h-[80vh] lg:min-h-screen flex-col items-center bg-bottom bg-repeat-x pt-24 sm:pt-32 px-4 sm:px-8 md:px-16" style={{ backgroundImage: 'linear-gradient(to top, purple, white, grey)' }}
         data-ai-hint="abstract background"
       >
         <div className="my-auto flex w-full max-w-screen-lg flex-col items-center justify-between gap-12 lg:flex-row lg:gap-16 text-center lg:text-left">
           <div className="max-w-md">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold font-heading uppercase tracking-tight">
               <span className="block text-primary">Streamer</span>
-              <span className="block">University</span>
-            </h1>
-            <p className="mb-6 mt-6 text-lg sm:text-xl font-semibold text-foreground/80">Now Accepting Applications</p>
+ <span className="block text-[#FFA500]">University</span>
+ </h1>
+            <p className="mb-6 mt-6 text-lg sm:text-xl font-semibold text-foreground/80">Now Streaming On Twitch</p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <EnrollButton href="https://forms.gle/EnCn9sMzzJjzmnPM9" text="ENROLL NOW" variant="primary" />
-              <EnrollButton href="https://forms.gle/ovkvbU1vGwXRXfMR6" text="ENROLL AS PROFESSOR" variant="secondary" />
+              <EnrollButton href="https://forms.gle/EnCn9sMzzJjzmnPM9" text="WATCH NOW" variant="primary" />
             </div>
           </div>
           <Image 
@@ -53,8 +51,7 @@ export default function HomePage() {
             width={400} 
             height={400}
             className="size-64 sm:size-80 md:size-96 shrink-0 rounded-lg shadow-2xl" 
-            data-ai-hint="placeholder background"
-            data-ai-hint="gaming character"
+            data-ai-hint="placeholder background, gaming character"
             priority
           />
         </div>
@@ -62,42 +59,31 @@ export default function HomePage() {
 
       {/* Intro Section */}
       <section className="relative py-16 sm:py-24 px-4 sm:px-8">
-        <div className="container mx-auto max-w-screen-lg text-center">
-          <Link 
-            href="https://www.youtube.com/watch?v=6cizwRaZJjM" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group absolute left-1/2 top-0 aspect-square w-24 sm:w-32 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-card p-2 shadow-xl transition-transform hover:scale-105"
-            aria-label="Watch intro video"
-          >
-            <div className="flex h-full w-full items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors group-hover:bg-primary/90">
-              <Play className="h-10 w-10 sm:h-12 sm:w-12" />
-            </div>
-          </Link>
+        <div className="container mx-auto max-w-screen-lg text-center mt-20 sm:mt-24">
+          <iframe
+              className="w-full aspect-video rounded-lg shadow-xl"
+              src="https://www.youtube.com/embed/VceCcwhIIvY?autoplay=1&mute=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen></iframe>
           <div className="mt-16 sm:mt-20 flex items-center justify-center gap-4 text-sm font-bold sm:gap-8 sm:text-lg md:text-xl">
-            <p className="w-full sm:w-auto text-right text-foreground/70">Since 2025</p>
+            <p className="w-full sm:w-auto text-right text-foreground/70">EST. 2025</p>
             <div className="aspect-square w-[12%] hidden sm:block"></div> {/* Spacer to push elements apart, mimicking original */}
-            <p className="w-full sm:w-auto text-left text-foreground/70 whitespace-nowrap">150+ Creators</p>
+            <p className="w-full sm:w-auto text-left text-foreground/70 whitespace-nowrap">150+ Creators!</p>
           </div>
-          <div className="mt-8 sm:mt-12">
-            <Image 
-              src="/images/banner.avif" 
-              alt="banner" 
-              width={1200} 
-              height={480} 
-              className="mx-auto rounded-lg shadow-lg"
-              data-ai-hint="university banner"
-            />
-          </div>
-        </div>
+          <div className="mt-8 sm:mt-12"></div>
+        </div>      
       </section>
 
       {/* Accepting Applications Section */}
       <section className="bg-gradient-to-b from-background to-secondary py-16 sm:py-24 px-4 sm:px-8">
         <div className="container mx-auto max-w-screen-lg">
           <div className="relative flex flex-col items-center justify-between gap-8 lg:flex-row">
-            <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 lg:left-0 lg:-translate-x-0 px-4 text-7xl sm:text-8xl font-black font-heading text-muted select-none z-0">90,000+</div>
-            <div className="relative z-10 max-w-lg flex-1 lg:basis-1/2 text-center lg:text-left">
+            <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 lg:left-0 lg:-translate-x-0 px-4 text-7xl sm:text-8xl font-black font-heading text-muted select-none z-0">
+              90,000+
+            </div>
+            <div className="relative z-10 max-w-lg flex-1 lg:basis-1/2 text-center lg:text-left">              
               <h2 className="text-3xl sm:text-4xl font-bold font-heading mb-2">
                 Now Accepting<br />Applications
               </h2>
@@ -105,15 +91,15 @@ export default function HomePage() {
                 At Streamer University, streamers of all backgrounds will have the
                 opportunity to showcase their personalities as students, alongside
                 both unrealized, upcoming and well-established creators.
-              </p>
-              <EnrollButton href="https://forms.gle/EnCn9sMzzJjzmnPM9" text="ENROLL NOW" className="mt-4 mx-auto lg:mx-0" />
+              </p>              
+              <EnrollButton href="https://forms.gle/EnCn9sMzzJjzmnPM9" text="ENROLL NOW" className="mt-4 mx-auto lg:mx-0" />              
             </div>
             <div className="flex-1 lg:basis-1/2 mt-8 lg:mt-0">
               <Image 
                 src="/images/gate.avif" 
                 alt="gate" 
                 width={600} 
-                height={400} 
+                height={400}                 
                 className="w-full max-w-md lg:max-w-full mx-auto rounded-lg shadow-xl"
                 data-ai-hint="university gate"
               />
@@ -192,8 +178,8 @@ export default function HomePage() {
 
       {/* Professor Application Section */}
       <section className="bg-background flex flex-col items-center gap-4 py-16 sm:py-24 px-4 sm:px-8 text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold font-heading">Want to Apply as a Professor?</h2>
-        <EnrollButton href="https://forms.gle/ovkvbU1vGwXRXfMR6" text="BECOME A PROFESSOR" className="mt-4" />
+        <h2 className="text-2xl sm:text-3xl font-bold font-heading">Want to Apply For Next Year?</h2>
+        <EnrollButton href="https://forms.gle/ovkvbU1vGwXRXfMR6" text="EARLY ADMISSION" className="mt-4" />
       </section>
 
       {/* Final Banner Section */}
