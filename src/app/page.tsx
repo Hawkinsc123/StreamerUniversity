@@ -90,7 +90,6 @@ export default function HomePage() {
             />
           </div>
         </div>
-      </section>
 
       {/* Accepting Applications Section */}
       <section className="bg-gradient-to-b from-background to-secondary py-16 sm:py-24 px-4 sm:px-8">
