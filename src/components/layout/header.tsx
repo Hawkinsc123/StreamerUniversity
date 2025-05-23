@@ -22,13 +22,13 @@ export function Header() {
             <Link href="/">HOME</Link>
           </Button>
           <Button variant="link" asChild className="text-foreground hover:text-primary font-bold text-sm sm:text-base whitespace-nowrap">
-            <Link href="https://forms.gle/EnCn9sMzzJjzmnPM9" target="_blank" rel="noopener noreferrer">ENROLL NOW</Link>
+            <Link href="https://forms.gle/EnCn9sMzzJjzmnPM9" target="_blank" rel="noopener noreferrer">STUDENTS</Link>
           </Button>
            <Button variant="link" asChild className="text-foreground hover:text-primary font-bold text-sm sm:text-base whitespace-nowrap">
             <Link href="/courses">COURSES</Link>
           </Button>
           <Button variant="link" asChild className="text-foreground hover:text-primary font-bold text-sm sm:text-base whitespace-nowrap">
-            <Link href="/professor-bio">PROFESSOR BIO</Link>
+            <Link href="/professor-bio">PROFESSORS</Link>
           </Button>
           <Button variant="link" asChild className="text-foreground hover:text-primary font-bold text-sm sm:text-base whitespace-nowrap">
             <Link href="https://github.com/Hawkinsc123/StreamerUniversity" target="_blank" rel="noopener noreferrer">VIEW CODE</Link>
