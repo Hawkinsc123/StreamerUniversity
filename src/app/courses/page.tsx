@@ -1,49 +1,104 @@
 import { CourseCard, type Course } from '@/components/course-card';
 import { GraduationCap } from 'lucide-react';
+import markusImage from '../../public/images/markus.png';
 
 const placeholderCourses: Course[] = [
   {
     id: '1',
-    title: 'Advanced Streaming Strategies',
-    description: 'Learn the art of engaging your audience and growing your channel with advanced techniques.',
-    professorName: 'Dr. Streamer Supreme',
+    title: 'Art of Collaboration',
+    description: 'Learn the art of engaging your audience and growing your channel with collaboration.',
+    professorName: 'Prof. Markus King',
     imageUrl: 'https://placehold.co/600x400.png?text=Course+1',
     category: 'Streaming',
     keywords: ['audience engagement', 'channel growth', 'monetization']
   },
   {
     id: '2',
-    title: 'Content Creation Masterclass',
+    title: 'Love & Relationships',
     description: 'From ideation to production, master the skills to create compelling content.',
-    professorName: 'Prof. Vid Pro',
+    professorName: 'Prof. India Love',
     imageUrl: 'https://placehold.co/600x400.png?text=Course+2',
     category: 'Content Creation',
-    keywords: ['video editing', 'scriptwriting', 'production']
+    keywords: ['Love', 'dating', 'india']
   },
   {
     id: '3',
-    title: 'Community Management & Moderation',
+    title: 'Defense Against the Hating Arts',
     description: 'Build and maintain a positive and thriving online community.',
-    professorName: 'Mx. Mod Expert',
+    professorName: 'Prof. ImDontai',
     imageUrl: 'https://placehold.co/600x400.png?text=Course+3',
     category: 'Community',
     keywords: ['moderation tools', 'conflict resolution', 'community building']
   },
   {
     id: '4',
-    title: 'The Business of Streaming',
+    title: 'Trickinometry',
     description: 'Understand sponsorships, merchandise, and other revenue streams.',
-    professorName: 'Prof. Bucks',
+    professorName: 'Prof. BenDaDon',
     imageUrl: 'https://placehold.co/600x400.png?text=Course+4',
     category: 'Business',
     keywords: ['sponsorships', 'merchandise', 'finance']
+  },
+  {
+    id: '5',
+    title: 'Glide Class for Beginners ',
+    description: 'Learn the importance of Fitness',
+    professorName: 'Prof. Kory',
+    imageUrl: 'https://placehold.co/600x400.png?text=Course+4',
+    category: 'Fitness',
+    keywords: ['sports', 'gym']
+  },
+  {
+    id: '6',
+    title: 'Science',
+    description: 'Learn Science Basics and Fun Facts!',
+    professorName: 'Prof. Extra Emily',
+    imageUrl: 'https://placehold.co/600x400.png?text=Course+4',
+    category: 'Science',
+    keywords: ['science', 'math',]
+  },
+  {
+    id: '7',
+    title: 'Physical Education',
+    description: 'Gym Class Required to Graduate',
+    professorName: 'Prof. Duke Dennis',
+    imageUrl: 'https://placehold.co/600x400.png?text=Course+4',
+    category: 'Fitness',
+    keywords: ['gym', 'duke']
+  },
+  {
+    id: '8',
+    title: 'Internet Beef 101',
+    description: 'Understand sponsorships, merchandise, and other revenue streams.',
+    professorName: 'Prof. DDG',
+    imageUrl: 'https://placehold.co/600x400.png?text=Course+4',
+    category: 'Beef',
+    keywords: ['sponsorships', 'argue']
+  },
+  {
+    id: '9',
+    title: 'Culinary Arts',
+    description: 'Understand sponsorships, merchandise, and other revenue streams.',
+    professorName: 'Prof. Cookinwitkya',
+    imageUrl: 'https://placehold.co/600x400.png?text=Course+4',
+    category: 'Cooking',
+    keywords: ['Cook', 'Love', 'hot']
+  },
+  {
+    id: '10',
+    title: 'Making Love Not Porn',
+    description: 'Understand sponsorships, merchandise, and other revenue streams.',
+    professorName: 'Prof. Cindy Gallop',
+    imageUrl: 'https://placehold.co/600x400.png?text=Course+4',
+    category: 'Love',
+    keywords: ['Love', 'Lovers']
   },
 ];
 
 export default function CoursesPage() {
   return (
     <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 mt-24">
         <GraduationCap className="mx-auto h-16 w-16 text-primary mb-4" />
         <h1 className="text-4xl sm:text-5xl font-extrabold font-heading text-primary tracking-tight">
           University Courses

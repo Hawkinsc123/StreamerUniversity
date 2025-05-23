@@ -7,12 +7,6 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const studentSteps = [
-  { number: "01", title: "Apply", bgColor: "bg-muted", textColor: "text-muted-foreground" },
-  { number: "02", title: "Wait For Acceptance Letters", bgColor: "bg-muted", textColor: "text-muted-foreground" },
-  { number: "03", title: "Move-In Day + Orientation", bgColor: "bg-card", textColor: "text-card-foreground" },
-];
-
-const benefits = [
   { number: "01", title: "Showcase Your Student Life", description: "Your academic story will be on display in front of not only your audience, but many other audiences as well. At StreamerU, all students and professors are creators. There will be cameras everywhere, streaming to a variety of audiences of many different platforms.", bgColor: "bg-card", textColor: "text-card-foreground", outlineColor: "outline-text-black" },
   { number: "02", title: "Meet Other Creators", description: "This entire event is a collaborative effort, involving many creative peers, industry leaders and professionals. You will have the opportunity to organically meet with everyone.", bgColor: "bg-black", textColor: "text-white", outlineColor: "outline-text-white" },
   { number: "03", title: "Actually Learn Useful Info", description: "While most classes will be fun, entertaining, and collaborative, some classes will actually provide quality information on how to better yourself as creators. Your future success is important to us!", bgColor: "bg-card", textColor: "text-card-foreground", outlineColor: "outline-text-black" },
@@ -42,7 +36,7 @@ export default function HomePage() {
  </h1>
             <p className="mb-6 mt-6 text-lg sm:text-xl font-semibold text-foreground/80">Now Streaming On Twitch</p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <EnrollButton href="https://forms.gle/EnCn9sMzzJjzmnPM9" text="WATCH NOW" variant="primary" />
+              <EnrollButton href="https://www.twitch.tv/directory/category/streamer-university" text="WATCH NOW" variant="primary" />
             </div>
           </div>
           <Image 
@@ -58,8 +52,11 @@ export default function HomePage() {
       </section>
 
       {/* Intro Section */}
-      <section className="relative py-16 sm:py-24 px-4 sm:px-8">
-        <div className="container mx-auto max-w-screen-lg text-center mt-20 sm:mt-24">
+      <section className="relative py-16 sm:py-24 px-4 sm:px-8 bg-black">
+        <div className="container mx-auto max-w-screen-lg text-center mt-20 sm:mt-24 bg-black">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase text-orange-500 mb-4">
+            <span className="text-[#FFA500]">MAY 22ND - MAY 25TH!</span>
+ </h2>
           <iframe
               className="w-full aspect-video rounded-lg shadow-xl"
               src="https://www.youtube.com/embed/VceCcwhIIvY?autoplay=1&mute=1"
@@ -67,11 +64,6 @@ export default function HomePage() {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen></iframe>
-          <div className="mt-16 sm:mt-20 flex items-center justify-center gap-4 text-sm font-bold sm:gap-8 sm:text-lg md:text-xl">
-            <p className="w-full sm:w-auto text-right text-foreground/70">EST. 2025</p>
-            <div className="aspect-square w-[12%] hidden sm:block"></div> {/* Spacer to push elements apart, mimicking original */}
-            <p className="w-full sm:w-auto text-left text-foreground/70 whitespace-nowrap">150+ Creators!</p>
-          </div>
           <div className="mt-8 sm:mt-12"></div>
         </div>      
       </section>
@@ -81,18 +73,17 @@ export default function HomePage() {
         <div className="container mx-auto max-w-screen-lg">
           <div className="relative flex flex-col items-center justify-between gap-8 lg:flex-row">
             <div className="absolute -top-12 sm:-top-16 left-1/2 -translate-x-1/2 lg:left-0 lg:-translate-x-0 px-4 text-7xl sm:text-8xl font-black font-heading text-muted select-none z-0">
-              90,000+
+              150,000+
             </div>
             <div className="relative z-10 max-w-lg flex-1 lg:basis-1/2 text-center lg:text-left">              
               <h2 className="text-3xl sm:text-4xl font-bold font-heading mb-2">
-                Now Accepting<br />Applications
+                Followers on Twitch!
               </h2>
               <p className="my-4 text-foreground/80 leading-relaxed">
-                At Streamer University, streamers of all backgrounds will have the
-                opportunity to showcase their personalities as students, alongside
-                both unrealized, upcoming and well-established creators.
+                Streamer University has already generated 1M+ views across platforms.
+                Join the more than 150K people currently following on Twitch!
               </p>              
-              <EnrollButton href="https://forms.gle/EnCn9sMzzJjzmnPM9" text="ENROLL NOW" className="mt-4 mx-auto lg:mx-0" />              
+              <EnrollButton href="https://www.twitch.tv/directory/category/streamer-university" text="FOLLOW NOW" className="mt-4 mx-auto lg:mx-0" />              
             </div>
             <div className="flex-1 lg:basis-1/2 mt-8 lg:mt-0">
               <Image 
@@ -108,56 +99,6 @@ export default function HomePage() {
         </div>
       </section>
       
-      {/* Steps Section */}
-      <section className="bg-black text-white py-16 sm:py-24 px-4 sm:px-8">
-        <div className="container mx-auto max-w-screen-xl">
-          <div className="text-center lg:text-left">
-            <p className="outline-text-current text-primary text-6xl sm:text-7xl md:text-8xl font-black font-heading">STEPS</p>
-            <div className="flex flex-col items-center lg:items-start gap-2 sm:gap-4 lg:flex-row lg:items-end mt-2">
-              <span className="text-neutral-400 text-3xl sm:text-4xl font-bold font-heading">YOU TAKE</span>
-              <p className="text-xl sm:text-2xl font-semibold font-heading uppercase">
-                Student<br className="sm:hidden" /> Process
-              </p>
-            </div>
-          </div>
-          <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 items-center gap-4 sm:gap-6">
-            {studentSteps.map((step) => (
-              <Card key={step.number} className={cn("h-full flex flex-col justify-between p-4 sm:p-6 shadow-lg transition-all hover:shadow-primary/30 hover:scale-105", step.bgColor, step.textColor)}>
-                <CardHeader className="p-0">
-                  <CardTitle className={cn("self-end text-3xl sm:text-4xl font-black", step.number === "03" ? "text-primary" : "outline-text-current")}>{step.number}</CardTitle>
-                </CardHeader>
-                <CardContent className="p-0 mt-auto">
-                  <p className="text-base sm:text-lg font-bold">{step.title}</p>
-                </CardContent>
-              </Card>
-            ))}
-             <Link 
-              href="https://forms.gle/EnCn9sMzzJjzmnPM9" 
-              target="_blank" rel="noopener noreferrer"
-              className="mt-8 md:mt-0 md:col-start-auto lg:col-start-4 flex aspect-square size-36 sm:size-48 flex-col items-center justify-center self-center whitespace-nowrap rounded-full border-2 border-neutral-600 p-4 text-center font-bold text-sm sm:text-base transition-colors hover:bg-primary hover:text-primary-foreground hover:border-primary"
-            >
-              ENROLL NOW
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="bg-secondary py-16 sm:py-24">
-        <div className="container mx-auto max-w-screen-xl px-4 sm:px-8">
-          <h2 className="sticky top-0 z-10 bg-secondary py-4 sm:py-6 text-3xl sm:text-5xl md:text-6xl font-black font-heading uppercase text-center lg:text-left">Benefits Of Being A Streamer-U Student</h2>
-          <div className="ml-auto lg:max-w-2xl xl:max-w-3xl flex flex-col gap-8 py-12 sm:py-16">
-            {benefits.map((benefit) => (
-              <div key={benefit.number} className={cn("relative flex min-h-[20rem] flex-col gap-4 sm:gap-8 rounded-xl p-6 sm:p-8 shadow-xl", benefit.bgColor, benefit.textColor)}>
-                <p className={cn("absolute inset-x-0 bottom-0 m-4 sm:m-6 text-right sm:text-left text-5xl sm:text-6xl font-black select-none opacity-50 sm:opacity-100", benefit.outlineColor)}>{benefit.number}</p>
-                <h3 className="text-2xl sm:text-3xl font-bold font-heading z-10">{benefit.title}</h3>
-                <p className="self-start sm:self-end text-sm sm:text-base leading-relaxed z-10 max-w-md">{benefit.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Notable Courses Section */}
       <section className="bg-black text-white py-16 sm:py-24 px-4 sm:px-8">
         <div className="container mx-auto max-w-screen-xl">
@@ -173,6 +114,14 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+      {/* Benefits Section */}
+      <section className="bg-secondary py-16 sm:py-24">
+        <div className="container mx-auto max-w-screen-xl px-4 sm:px-8">
+          <h2 className="sticky top-0 z-10 bg-secondary py-4 sm:py-6 text-3xl sm:text-5xl md:text-6xl font-black font-heading uppercase text-center lg:text-left">Benefits Of Being A Streamer-U Student</h2>
+          <div className="ml-auto lg:max-w-2xl xl:max-w-3xl flex flex-col gap-8 py-12 sm:py-16">
+          </div>
         </div>
       </section>
 
