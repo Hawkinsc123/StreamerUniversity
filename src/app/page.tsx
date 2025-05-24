@@ -32,7 +32,7 @@ export default function HomePage() {
           <div className="max-w-md">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold font-heading uppercase tracking-tight">
               <span className="block text-primary">Streamer</span>
- <span className="block text-[#FFA500]">University</span>
+ <span className="block text-[#ffb700]">University</span>
  </h1>
             <p className="mb-6 mt-6 text-lg sm:text-xl font-semibold text-foreground/80">Now Streaming On Twitch</p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -119,7 +119,7 @@ export default function HomePage() {
       {/* Benefits Section */}
       <section className="bg-secondary py-16 sm:py-24">
         <div className="container mx-auto max-w-screen-xl px-4 sm:px-8">
-          <h2 className="sticky top-0 z-10 bg-secondary py-4 sm:py-6 text-3xl sm:text-5xl md:text-6xl font-black font-heading uppercase text-center lg:text-left">Benefits Of Being A Streamer-U Student</h2>
+          <h2 className="sticky top-0 z-10 bg-secondary py-4 sm:py-6 text-3xl sm:text-5xl md:text-6xl font-black font-heading uppercase text-center lg:text-left">Streamer-U Students</h2>
           <div className="ml-auto lg:max-w-2xl xl:max-w-3xl flex flex-col gap-8 py-12 sm:py-16">
           </div>
         </div>
