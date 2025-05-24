@@ -11,9 +11,9 @@ export function Header() {
           <Image 
             src="/images/StreamerU.avif" 
             alt="Streamer University Logo" 
-            width={60} 
-            height={52} 
-            className="h-14 w-auto sm:h-20"
+            width={120} 
+            height={104} 
+            className="h-12 w-auto sm:h-16 lg:h-20"
             data-ai-hint="university logo" 
           />
         </Link>
