@@ -119,8 +119,8 @@ export default function HomePage() {
       {/* Benefits Section */}
       <section className="bg-secondary py-16 sm:py-24">
         <div className="container mx-auto max-w-screen-xl px-4 sm:px-8">
-          <h2 className="sticky top-0 z-10 bg-secondary py-4 sm:py-6 text-3xl sm:text-5xl md:text-6xl font-black font-heading uppercase text-center lg:text-left">Streamer-U Students</h2>
-          <div className="ml-auto lg:max-w-2xl xl:max-w-3xl flex flex-col gap-8 py-12 sm:py-16">
+ <h2 className="py-2 sm:py-3 text-3xl sm:text-5xl md:text-6xl font-black font-heading uppercase text-center lg:text-left">Streamer-U Students</h2>
+          <div className="ml-auto flex flex-col gap-8 py-12 sm:py-16">
           </div>
         </div>
       </section>
